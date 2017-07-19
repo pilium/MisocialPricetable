@@ -4,7 +4,10 @@
         .logo
             img(src="img/logo.png", alt="logo")
             span.logo-text MISOCIAL
-        nav.main-menu(role="navigation")
+        a.m-menu
+            span
+        nav.main-menu.visible-lg(role="navigation")
+            .close-menu &times
             ul
                 li: a(href="#").menu-link Home
                 li: a(href="#").menu-link Why MISOCIAL
