@@ -9,6 +9,11 @@ html(lang="ru-RU")
 		//- link(rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png")
 		//- link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png")
 		//- link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script.
+			$(window).on('load', function() {
+			$('.preloader').delay(1000).fadeOut('slow');
+			});
 		link(rel="stylesheet" type='text/css' href="css/main.min.css")
 
 		//- Для задания цвета браузера(окно url) на mobile
@@ -30,5 +35,4 @@ html(lang="ru-RU")
 
 		include ../modules/footer
 		
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 		script(src="js/scripts.min.js")
